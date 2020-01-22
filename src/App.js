@@ -22,7 +22,7 @@ function App() {
       <div className="logo-wrap">
         <img className="logo"
           alt="logo"
-          src="https://www.pngjoy.com/pngm/83/1773038_cool-png-cool-logos-transparent-png.png" 
+          src="https://library.kissclipart.com/20181111/cgq/kissclipart-gucci-dress-shoes-for-men-clipart-shoe-gucci-sneak-954857965aadfbd9.jpg" 
         />
         Chatter
       </div>
