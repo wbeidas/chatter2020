@@ -12,7 +12,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background: linear-gradient(to right, #dd5e89, #f7bb97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background:linear-gradient(145deg, #350f50, #d83619);
   color:black;
 }
 
@@ -62,12 +62,11 @@ header{
   font-size:13px;
   padding:0 11px;
   position:absolute;
-  left:4px;
+  left:30px;
   top:4px;
   height:32px;
   outline:none;
-  width: calc(100% - 8px);
-  
+  width: calc(100% - 30px);
 }
 .text-input:focus{
   border: 1px solid blue;
@@ -104,19 +103,34 @@ header{
   left:0px;
   display:flex;
   flex-direction: column-reverse;
-  overflow-y:scroll;
+  overflow-y:auto;
 }
 .message-wrap{
-  width:50%;
-  word-break: break-all;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
 }
+.message-wrap[from="me"]{
+  justify-content: flex-end;
+}
+
 .message{
+  position: relative;
+  margin-top:10px;
+}
+.msg-text{
   color:white;
   background:black;
   margin:5px;
   border-radius:5px;
   padding:3px 6px;
   display: inline-block;
+}
+.msg-name{
+  font-size:11px;
+  position:absolute;
+  top:-9px;
+  left:5px;
 }
 
 
@@ -145,16 +159,14 @@ header{
   border:1px solid white;
   border-radius:14px;
   padding-left:12px;
-  background:#1be014;
+  background:#1f1e2e;
   padding-bottom:2px;
   font-size:12px;
   outline:none;
-  color: black;
 }
 .username{
   display: flex;
   align-items: center;
   margin-right:12px;
   font-size:1.1rem;
-  
 }

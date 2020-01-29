@@ -7,7 +7,9 @@ function NamePicker(props) {
   const inputEl = useRef(null)
 
   function save(){
-    inputEl.current.focus()
+    setTimeout(()=>{
+      inputEl.current.focus()
+    },50)
     if(name && !showName) {
       props.onSave(name)
       localStorage.setItem('name',name)
@@ -19,7 +21,9 @@ function NamePicker(props) {
     const n = localStorage.getItem('name')
     if(n) {
       setName(n)
-      save() 
+      setTimeout(()=>{
+        save()
+      },50)
     }
   }, [])
 
