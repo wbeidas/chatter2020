@@ -8,7 +8,7 @@ import Camera from 'react-snap-pic'
 import {FiCamera} from 'react-icons/fi'
 import * as firebase from "firebase/app"
 import "firebase/storage"
-
+import './media.css'
 function App(){
   useEffect(()=>{
     const {pathname} = window.location

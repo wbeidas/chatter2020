@@ -1,7 +1,7 @@
 *{
   box-sizing:border-box;
 }
-html,body{
+html,body, #root{
   height:100%;
   position: fixed;
   top:0;left:0;bottom:0;right:0;
@@ -13,6 +13,7 @@ body{
   align-items:center;
   justify-content:center;
   background:linear-gradient(145deg, #350f50, #d83619);
+  background-color: rgb(188, 72, 192);
   color:black;
 }
 
@@ -37,7 +38,7 @@ header{
 }
 
 .logo {
-  height:24px;
+  height: 2rem;
   margin-right:10px;
 }
 .logo-wrap{
@@ -59,7 +60,7 @@ header{
   border:1px solid black;
   width:100%;
   border-radius:15px;
-  font-size:13px;
+  font-size:16px;
   padding:0 11px;
   position:absolute;
   left:30px;
@@ -96,10 +97,10 @@ header{
 }
 
 .messages{
-  height:calc(100vh - 96px);
+  height:calc(100% - 8rem);
   width:100vw;
   position: absolute;
-  top:48px;
+  top:4rem;
   left:0px;
   display:flex;
   flex-direction: column-reverse;
