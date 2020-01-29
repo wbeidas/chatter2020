@@ -9,6 +9,7 @@ import {FiCamera} from 'react-icons/fi'
 import * as firebase from "firebase/app"
 import "firebase/storage"
 import './media.css'
+import Div100vh from 'react-div-100vh'
 function App(){
   useEffect(()=>{
     const {pathname} = window.location
@@ -35,7 +36,7 @@ function Room(props) {
     })
   }
 
-  return <main>
+  return <Div100vh>
 
     {showCamera && <Camera takePicture={takePicture} />}
   
@@ -64,7 +65,7 @@ function Room(props) {
     showCamera={()=>setShowCamera(true)} 
     />
     
-  </main>
+  </Div100vh>
 }
 const bucket = 'https://firebasestorage.googleapis.com/v0/b/chatter-550dd.appspot.com/o/'
 const suffix = '.jpg?alt=media'
